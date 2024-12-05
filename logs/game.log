@@ -1,0 +1,14 @@
+ERROR:root:2024-12-05 16:19:44 - Sound.__init__: No file 'assets/sounds/eat.wav' found in working directory 'C:\Users\ncole\OneDrive\Desktop\00_PythonWIP\00_PythonWIP\Games'.
+ERROR:root:2024-12-05 16:20:03 - Sound.__init__: No file 'assets/sounds/eat.wav' found in working directory 'C:\Users\ncole\OneDrive\Desktop\00_PythonWIP\00_PythonWIP\Games'.
+ERROR:root:2024-12-05 16:20:28 - Sound.__init__: No file 'assets/sounds/eat.wav' found in working directory 'C:\Users\ncole\OneDrive\Desktop\00_PythonWIP\00_PythonWIP\Games'.
+ERROR:root:2024-12-05 17:10:07 - Sound.__init__: No file 'assets/sounds/eat.wav' found in working directory 'C:\Users\ncole\OneDrive\Desktop\00_PythonWIP\00_PythonWIP\Games'.
+ERROR:root:2024-12-05 17:10:07 - main: 'int' object is not subscriptable
+ERROR:root:2024-12-05 17:10:33 - Sound.__init__: No file 'assets/sounds/eat.wav' found in working directory 'C:\Users\ncole\OneDrive\Desktop\00_PythonWIP\00_PythonWIP\Games'.
+ERROR:root:2024-12-05 17:10:33 - main: 'int' object is not subscriptable
+ERROR:root:2024-12-05 17:14:29 - Sound.__init__: No file 'assets/sounds/eat.wav' found in working directory 'C:\Users\ncole\OneDrive\Desktop\00_PythonWIP\00_PythonWIP\Games'.
+ERROR:root:2024-12-05 17:14:29 - main: 'int' object is not subscriptable
+ERROR:root:2024-12-05 17:27:18 - Sound.__init__: No file 'assets/sounds/eat.wav' found in working directory 'C:\Users\ncole\OneDrive\Desktop\00_PythonWIP\00_PythonWIP\Games'.
+ERROR:root:2024-12-05 17:27:18 - main: 'int' object is not subscriptable
+ERROR:root:2024-12-05 17:28:31 - Sound.__init__: No file 'assets/sounds/eat.wav' found in working directory 'C:\Users\ncole\OneDrive\Desktop\00_PythonWIP\00_PythonWIP\Games'.
+ERROR:root:2024-12-05 17:28:31 - main: 'int' object is not subscriptable
+ERROR:root:2024-12-05 17:47:39 - Sound.__init__: No file 'assets/sounds/eat.wav' found in working directory 'C:\Users\ncole\OneDrive\Desktop\00_PythonWIP\00_PythonWIP\Snake_Game_Good'.

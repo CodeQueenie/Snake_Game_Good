@@ -1,0 +1,25 @@
+add new features: 
+
+
+Admin screen requirements:
+
+  On the first time program runs open the administration panel:
+
+  Give me a form to manage new and existing users:
+        - Manage functions should include create, read, update, and delete.  
+
+  Make the following variables configurable:
+        - Length of game time in minutes. game_length 
+        - food_size larger by 2 pixels
+        - game_window_size 500x 500y minmum by 1500x by 1500y.
+
+Screen information display:
+    - line of instructions at top of screen.
+
+Game controls:
+    - Make the game pause using P key.
+    - Make game resume using R key.
+    - Exit using CTRL-X.
+    - New game using CTRL-N.
+    - Save game using CTRL-S and be able to resume later from there on.
+    - Open admin panel using CTRL-A.
