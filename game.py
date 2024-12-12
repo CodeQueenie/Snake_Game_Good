@@ -3,7 +3,19 @@ import random
 from utils import log_error
 
 class Game:
+    """
+    Game class to manage the Snake game logic and state.
+    """
+
     def __init__(self, screen):
+        """
+        Initializes the Game with the given screen.
+
+        Parameters
+        ----------
+        screen : pygame.Surface
+            The screen surface where the game will be drawn.
+        """
         self.screen = screen
         self.snake = [(100, 100), (90, 100), (80, 100)]
         self.direction = pygame.K_RIGHT
@@ -13,6 +25,9 @@ class Game:
         self.speed = 10
 
     def handle_events(self):
+        """
+        Handles user input events such as key presses and window close events.
+        """
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
@@ -22,6 +37,9 @@ class Game:
                     self.direction = event.key
 
     def update(self):
+        """
+        Updates the game state, including the snake's position and collision detection.
+        """
         head = self.snake[0]
         if self.direction == pygame.K_UP:
             new_head = (head[0], head[1] - 10)
@@ -46,6 +64,9 @@ class Game:
             self.game_over()
 
     def draw(self):
+        """
+        Draws the game elements on the screen.
+        """
         self.screen.fill((0, 0, 0))
         for segment in self.snake:
             pygame.draw.rect(self.screen, (0, 255, 0), (*segment, 10, 10))
@@ -54,7 +75,17 @@ class Game:
         self.draw_text(f"Level: {self.level}", 10, 30)
 
     def generate_food(self):
-        return (random.randint(0, 79) * 10, random.randint(0, 59) * 10)
+        """
+        Generates a new food item at a random position on the screen.
+
+        Returns
+        -------
+        tuple
+            The (x, y) coordinates of the new food item.
+        """
+        x = random.randint(0, self.screen.get_width() // 10 - 1) * 10
+        y = random.randint(0, self.screen.get_height() // 10 - 1) * 10
+        return (x, y)
 
     def draw_text(self, text, x, y):
         font = pygame.font.Font(None, 36)

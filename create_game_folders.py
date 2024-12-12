@@ -1,6 +1,24 @@
 import os
 
 def create_folders():
+    """
+    Creates the necessary folders for the Snake game.
+
+    The following folders are created:
+    - snake_game
+    - snake_game/assets
+    - snake_game/assets/sounds
+    - snake_game/assets/music
+    - snake_game/logs
+    - snake_game/database
+
+    If a folder already exists, it will not be recreated.
+
+    Raises
+    ------
+    Exception
+        If there is an error creating any of the folders.
+    """
     folders = [
         "snake_game",
         "snake_game/assets",

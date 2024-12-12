@@ -23,3 +23,18 @@ Game controls:
     - New game using CTRL-N.
     - Save game using CTRL-S and be able to resume later from there on.
     - Open admin panel using CTRL-A.
+
+COPILOT / Phind PROMPT DOCUMENTATION Project PROMPT:
+
+## Documentating Each Module and Fucntion in the Snake Game:
+Ingest each of the attached code lines. Iterate through each file and provide complete docstrings for each module,
+and provide docstrings for each function and class in each module that explain what each one does. Give me back
+each file fully documented so that I can save it and test it.
+
+DO NOT CHNAGE ANY OF THE ACTIVE CODE. YOUR TASK IS TO PROVIDE GOOD HIGH-QUALITY
+DOCUMENTATION FOR THE CODE THAT IS THERE. YOU SHOULD NOT CHANGE OR TRY TO IMPROVE THE
+ACTIVE CODE IN ANY WAY.
+
+# Overall (README md) Documnentation for the Snake Game Project:
+Next we will create README.md file that will complete documentation for all parts of the game. Use the previous files
+that were just documented to create the README.md file. This will be the final step in the documentation project.

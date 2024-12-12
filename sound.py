@@ -2,7 +2,14 @@ import pygame
 from utils import log_error
 
 class Sound:
+    """
+    Sound class to manage game sounds and background music.
+    """
+
     def __init__(self):
+        """
+        Initializes the Sound class, loads sound effects and background music.
+        """
         try:
             pygame.mixer.init()
             self.eat_sound = pygame.mixer.Sound("assets/sounds/eat.wav")
@@ -14,12 +21,28 @@ class Sound:
             log_error("Sound.__init__", str(e))
 
     def play_eat_sound(self):
+        """
+        Plays the sound effect for eating.
+
+        Raises
+        ------
+        Exception
+            If there is an error playing the sound.
+        """
         try:
             self.eat_sound.play()
         except Exception as e:
             log_error("play_eat_sound", str(e))
 
     def play_game_over_sound(self):
+        """
+        Plays the sound effect for game over.
+
+        Raises
+        ------
+        Exception
+            If there is an error playing the sound.
+        """
         try:
             self.game_over_sound.play()
         except Exception as e:
