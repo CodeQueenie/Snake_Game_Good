@@ -30,7 +30,6 @@ class User:
         """
         try:
             with self.conn:
-                self.conn.execute("DROP TABLE IF EXISTS users")
                 self.conn.execute("""
                     CREATE TABLE IF NOT EXISTS users (
                         id INTEGER PRIMARY KEY,
@@ -60,6 +59,45 @@ class User:
                 """, (username, password))
         except Exception as e:
             log_error("add_user", str(e))
+
+    def update_user(self, username, new_password):
+        """
+        Updates the password of an existing user.
+
+        Parameters
+        ----------
+        username : str
+            The username of the user.
+        new_password : str
+            The new password of the user.
+        """
+        try:
+            with self.conn:
+                self.conn.execute("""
+                    UPDATE users
+                    SET password = ?
+                    WHERE username = ?
+                """, (new_password, username))
+        except Exception as e:
+            log_error("update_user", str(e))
+
+    def delete_user(self, username):
+        """
+        Deletes a user from the database.
+
+        Parameters
+        ----------
+        username : str
+            The username of the user to delete.
+        """
+        try:
+            with self.conn:
+                self.conn.execute("""
+                    DELETE FROM users
+                    WHERE username = ?
+                """, (username,))
+        except Exception as e:
+            log_error("delete_user", str(e))
 
     def authenticate_user(self, username, password):
         """

@@ -1,5 +1,4 @@
 import sqlite3
-import os
 from utils import log_error
 
 class Leaderboard:
@@ -11,8 +10,6 @@ class Leaderboard:
         """
         Initializes the Leaderboard and ensures the database directory exists.
         """
-        # Ensure the database directory exists
-        os.makedirs("database", exist_ok=True)
         self.conn = sqlite3.connect("database/leaderboard.db")
         self.create_table()
 
@@ -31,6 +28,16 @@ class Leaderboard:
                 """)
         except Exception as e:
             log_error("create_table", str(e))
+
+    def clear_table(self):
+        """
+        Clears the leaderboard table.
+        """
+        try:
+            with self.conn:
+                self.conn.execute("DELETE FROM leaderboard")
+        except Exception as e:
+            log_error("clear_table", str(e))
 
     def add_score(self, name, score):
         """
